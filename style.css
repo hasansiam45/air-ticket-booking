@@ -120,3 +120,13 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+
+/* adding some extra styles */
+#firstClassPlusAdd,
+#firstClassMinusAdd,
+#economyClassPlusAdd,
+#economyClassMinusAdd,
+.btn-style {
+    cursor: pointer;
+}
