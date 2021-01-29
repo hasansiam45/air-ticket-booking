@@ -27,7 +27,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="booking" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -41,7 +41,7 @@
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                        <input class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
@@ -51,17 +51,17 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($<span id="firstClassTicketPrice">150</span>)</label>
-                    <input id="firstClassTicketQuantity" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="firstClassTicketQuantity" class="inp-style inp-width" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <p><span id="firstClassPlusAdd">+</span> <span id="firstClassMinusAdd">-</span></p>
                 </div>
             </div>
-            
+
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($<span id="economyClassTicketPrice">100</span>)</label>
-                    <input id="ecenomyClassTicketQuantity" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="economyClassTicketQuantity" class="inp-style inp-width" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <p> <span id="economyClassPlusAdd">+</span> <span id="economyClassMinusAdd">-</span> </p>
@@ -95,16 +95,24 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                voluptatibus quam</p>
         </div>
-    </section>
+    </main>
+
+    <div id="confirm" class="confirm_text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, placeat?</p>
+
+    </div>
 
     <!--Thank You-->
+    <script src="main.js"></script>
 </body>
 
 </html>
