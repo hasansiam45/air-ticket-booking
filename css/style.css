@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("images/bg.png");
+    background: url("../images/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -146,13 +146,18 @@ a.active {
 #firstClassPlusAdd,
 #firstClassMinusAdd,
 #economyClassPlusAdd,
-#economyClassMinusAdd,
-.btn-style {
+#economyClassMinusAdd{
     cursor: pointer;
+    display: block;
+    font-size: 32px;
+    padding: 0 20px;
+    margin: 10px;
 }
-
+.btn-style{
+    cursor: pointer;
+    font-size: 32px;
+}
 #confirm {
-    /* background-color:rgb(47, 79, 79, 0.9); */
     background: linear-gradient(to bottom right, green, red);
     color: #fff;
     font-weight: bold;
@@ -166,3 +171,4 @@ a.active {
     display: none;
     overflow: hidden;
 }
+

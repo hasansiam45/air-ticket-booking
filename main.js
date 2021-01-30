@@ -7,14 +7,12 @@ document.getElementById('economyClassTicketQuantity').value = 0;
 document.getElementById('firstClassPlusAdd').addEventListener('click', function () {
 
     plusButtonHandler('firstClass', true);
-    ticketPrice('firstClass');
     calculateTotalPrice();
 })
 
 document.getElementById('firstClassMinusAdd').addEventListener('click', function () {
 
     plusButtonHandler('firstClass', false);
-    ticketPrice('firstClass');
     calculateTotalPrice();
 })
 
@@ -22,13 +20,11 @@ document.getElementById('firstClassMinusAdd').addEventListener('click', function
 
 document.getElementById('economyClassPlusAdd').addEventListener('click', function () {
     plusButtonHandler('economyClass', true);
-    ticketPrice('economyClass');
     calculateTotalPrice();
 })
 
 document.getElementById('economyClassMinusAdd').addEventListener('click', function () {
     plusButtonHandler('economyClass', false);
-    ticketPrice('economyClass');
     calculateTotalPrice();
 })
 
@@ -49,21 +45,6 @@ function plusButtonHandler(myclass, isIncrease) {
     myclassTicket.value = myclassTicketAmount;
 }
 
-
-
-// function for ticket price
-function ticketPrice(myClass) {
-    const myClassInput = document.getElementById(myClass + 'TicketQuantity').value;
-    const myClassQuantity = parseInt(myClassInput);
-    let myClassPrice = 0;
-    if (myClass == 'firstClass') {
-        myClassPrice = myClassQuantity * 150;
-    }
-    if (myClass == 'economyClass') {
-        myClassPrice = myClassQuantity * 100;
-    }
-    document.getElementById(myClass + 'TicketPrice').innerText = myClassPrice;
-}
 
 
 
