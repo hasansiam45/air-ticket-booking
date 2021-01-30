@@ -73,7 +73,7 @@ function calculateTotalPrice() {
 }
 
 
-// function for onchange event handler
+// onchange event handler
 document.getElementById('firstClassTicketQuantity').addEventListener('change', calculateTotalPrice);
 document.getElementById('economyClassTicketQuantity').addEventListener('change', calculateTotalPrice);
 
